@@ -130,16 +130,28 @@ header ul li a{
   .nav-menu {
       position: fixed;
       left: -100%;
-      top: 7rem;
+      top: 9rem;
       flex-direction: column;
       background-color: #fff;
       width: 100%;
       border-radius: 10px;
       text-align: center;
       transition: 0.3s;
-      box-shadow:
-          0 10px 27px rgba(0, 0, 0, 0.05);
+      box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
   }
+      
+  .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+  }
+  
   header ul li a{
     color: rgb(58, 31, 179);
   }
@@ -445,7 +457,6 @@ nav ul li a:hover::after{
   color: #fff;
   font-size: 14px;
   margin-right: 10px;
-  margin-top: 30px;
 }
 
 .btn:hover{
@@ -548,9 +559,12 @@ background-image: url(/photo/svg/banner-new\ \(2\).svg);
   text-align: center;
  
 }
-.about .part_text p{
+.about .part_text p {
   border-bottom: 1px solid #f1f1f1;
- 
+  margin: 20px 0px;
+  font-weight: lighter;
+  font-size: 13px;
+  padding: 0px 7px;
 }
 
 .about .part_text .info li{
@@ -559,6 +573,10 @@ background-image: url(/photo/svg/banner-new\ \(2\).svg);
   margin-bottom: 15px;
 }
 
+span.value{
+  color: #1957f3;
+  font-weight: lighter;
+}
 /** hire me CSS */
 
 .hire_me{
@@ -729,7 +747,12 @@ background-image: url(/photo/svg/banner-new\ \(2\).svg);
     font-size: 12px;
     margin-right: 9px;
     margin-top: 30px;
-}
+    font-size: 10px;
+  }
+  .img-fluid1 {
+    padding: 30px 0px;
+    /* padding-top: 50px; */
+  }
   .hire_me h3 {
     font-size: 17px;
     font-weight: 300px;
@@ -747,7 +770,7 @@ background-image: url(/photo/svg/banner-new\ \(2\).svg);
   }
   .banner{
     background-image:url(/photo/svg/mob-view\ \(1\).svg);
-    height: 775px;
+    height: 100vh;
   }
   .banner .caption{
     margin-top: 90%;
@@ -800,11 +823,20 @@ background-image: url(/photo/svg/banner-new\ \(2\).svg);
   }
   p span{
     color: blue;
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: lighter;
+    font-size: 15px;
   }
   .info .value{
     color: blue;
+  }
+  .blog .blog-item .part-img .post-info-category a {
+    background: #1957f3;
+    padding: 7px 19px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  b, strong {
+    font-weight: lighter;
   }
 
 }
