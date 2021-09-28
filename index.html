@@ -30,9 +30,9 @@
                 <a href="#"><img style="height: 60px; width: 120px;" src="./photo/logo/logo-.svg" alt=""></a>
                 <ul class="nav-menu" >
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#about_me">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about_me">contact</a></li>
                 </ul>
 
                 <div class="hamburger">
@@ -56,7 +56,7 @@
                         </p>
 
                         <div class="social_icon mt20">
-                            <a  href="https://www.facebook.com/shibam.debnath/" target="_blank"> <span> <i
+                            <a  href="https://www.facebook.com/ind.iconic" target="_blank"> <span> <i
                                         class="fa fa-facebook"></i> </span> </a>
                             <a href="https://www.instagram.com/_b_i_k_i__/" target="_blank"> <span> <i
                                         class="fa fa-instagram"></i> </span> </a>
@@ -232,33 +232,14 @@
         </section>
 
 
+        <link rel="stylesheet" href="app.js">
+
+
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous">
-        </script>
-        <script>
-            function myFunction() {
-             var x = document.getElementById("myTopnav");
-             if (x.className === "topnav") {
-                  x.className += " responsive";
-                } else {
-                x.className = "topnav";
-                }
-            }
-        </script>
-
-        <script>
-            const hamburger = document.querySelector(".hamburger");
-            const navMenu = document.querySelector(".nav-menu");
-
-            hamburger.addEventListener("click", mobileMenu);
-
-           function mobileMenu() {
-            hamburger.classList.toggle("active");
-            navMenu.classList.toggle("active");
-        }
         </script>
     
 </body>
