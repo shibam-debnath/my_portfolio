@@ -1,0 +1,231 @@
+ 
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(0, 0, 0);
+}
+
+/***   SCHROLLBAR   ***/
+  body::-webkit-scrollbar {
+   width: 12px;               /* width of the entire scrollbar */
+}
+ 
+body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(155, 26, 194);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 1px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
+  }
+ 
+
+
+   /**  sidenav   **/
+
+#mySidenav a {
+    position: fixed; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.6s; /* Add transition on hover */
+    padding-left: 10px;
+    line-height: 60px;
+    padding: 1px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 15px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  }
+  
+  #mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+  }
+  
+  /* The about link: 20px from the top with a green background */
+  #about {
+    top: 430px;
+    background-color: #04AA6D;
+  }
+  
+  #blog {
+    top: 130px;
+    background-color: #2196F3; /* Blue */
+  }
+  
+  #projects {
+    top: 230px;
+    background-color: #f44336; /* Red */
+  }
+  
+  #contact {
+    top: 330px;
+    background-color: rgb(175, 38, 202) /* Light Black */
+  }
+
+
+  /*    Carousel slider        */
+  
+
+
+
+  /**                sketch                              **/
+.sketch-sec{
+  padding: 40px;
+}
+.a-sec{
+  padding: 40px;
+}
+ 
+.section-tit p{
+  font-size: 30px;
+  text-align: center;
+  background: #1957f3;
+  padding: 7px 19px;
+  color: #fff;
+  margin-left: 1.8%;
+  margin-right: 1.8%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 45px;
+
+}
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 55%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    padding-left: 55px;
+    padding-right: 20px;
+    padding-top: 40px;
+    width: 100%;
+  }
+  .column img:hover{
+    transform: scale(1.06);
+    transition: 0.4s;
+  }
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 700px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+    .column img {
+      margin-top: 0px;
+      vertical-align: middle;
+      padding-left: 14px;
+      padding-right: 0px;
+      padding-top: 18px;
+      width: 98%;
+    }
+    .sketch-sec {
+      padding: 22px;
+    }
+    .section-tit p {
+      font-size: 15px;
+    }
+    .a-sec {
+      padding: 24px;
+    }
+    .container-form {
+      border-radius: 0px;
+      padding: 17px 41px;
+    }
+    .column img:hover{
+      transform: scale(1.5s);
+      transition: 0.9s;
+      align-items: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+ 
+
+
+
+
+  /*     Contac ME    ***/
+
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid rgb(255, 255, 255); /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #a328d4;
+}
+
+/* Add a background color and some padding around the form */
+.container-form {
+  border-radius: 0px;
+   padding: 20px 80px;
+}
+ 
+#fname   {
+  background-color: rgb(39, 39, 39);
+  border-radius: 15px;
+}
+.form-head{
+  background-color: rgb(0, 0, 0);
+}
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 70;
+  color: rgb(255, 255, 255);
+}
